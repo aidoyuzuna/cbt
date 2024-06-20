@@ -1,0 +1,58 @@
+.progress--text__right {
+    text-align: right;
+}
+
+.emotion-area {
+    margin-bottom: 30px;
+}
+
+.emotion-margin {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+/*ボタン*/
+.btn {
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.btn--disabled {
+    background-color: #333;
+}
+
+.btn--maincolor {
+    background: #2196F3;
+}
+
+.btn--flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+.page-btn--margin {
+    margin-top: 50px;
+}
+
+.btn--right {
+    display: flex;
+    justify-content: right;
+}
+
+.feel-btn {
+    background: #777;
+}
+
+.emotion-hidden {
+    display: none;
+}
+
+.emotion-btn-margin {
+    margin-right: 30px;
+}

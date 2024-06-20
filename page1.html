@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>認知行動療法アプリ</title>
+    <link rel="stylesheet" href="asset/reset.css">
+    <link rel="stylesheet" href="asset/base-tag.css">
+    <link rel="stylesheet" href="asset/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>認知行動療法アプリ</h1>
+        <h2>進行度</h2>
+        <progress id="progress" max="100" value="0"></progress>
+        <p class="progress--text__right">0%</p>
+        <div class="input-container">
+            <h2>何が起きたのか書いてください</h2>
+            <textarea id="page1-texterea" placeholder="詳細を記入してください"></textarea>
+        </div>
+        <div class="btn--right page-btn--margin">
+            <button id="page1-next" class="btn next--btn btn--right__child">次へ</button>
+        </div>
+    </div>
+</body>
+<script src="asset/page1.js"></script>
+
+</html>

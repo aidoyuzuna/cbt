@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+body {
+    color: #fff;
+    background: #212121;
+    font-family: "Noto Sans JP", sans-serif;
+    width: 1000px;
+    margin: auto;
+}
+
+/*見出し*/
+h1 {
+    margin: 20px 0;
+}
+
+
+h2 {
+    margin: 10px 0;
+}
+
+/*pタグ*/
+p {
+    margin: 0 0 20px;
+}
+
+/*テキストエリア*/
+textarea {
+    width: 1000px;
+    height: 300px;
+    background: #555;
+    color: #fff;
+}
+
+/*感情バー*/
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    /* outline: none を指定 */
+    cursor: pointer;
+    width: 940px;
+    background: #555;
+    height: 8px;
+    border-radius: 8px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #EEEEEE;
+    border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+    border: none;
+    height: 20px;
+    width: 20px;
+    background-color: #EEEEEE;
+    border-radius: 50%;
+}
+
+/*感情バーテキスト*/
+input[type="text"] {
+    background: #555;
+    color: #fff;
+    width: 50px;
+    padding: 10px;
+}
+
+select {
+    width: 1000px;
+    padding: 10px;
+    background: #555;
+    color: #fff;
+}
+
+/*進捗バー*/
+progress {
+    width: 1000px;
+    border: none;
+    background-color: #555;
+    /* バーの背景色 */
+}
+
+progress::-webkit-progress-bar {
+    background-color: #555;
+    /* バーの背景色 */
+}
+
+progress::-webkit-progress-value {
+    background-color: #2196F3;
+    /* プログレスの色 */
+}
+
+progress::-moz-progress-bar {
+    background-color: #2196F3;
+    /* プログレスの色 */
+}
