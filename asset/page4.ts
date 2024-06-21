@@ -1,11 +1,12 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const page4Text = document.getElementById('page4-texterea') as HTMLTextAreaElement;
-    const page4NextButton = document.getElementById('page4-next') as HTMLButtonElement;
-    const page4BeforeButton = document.getElementById('page4-before') as HTMLButtonElement;
+let LodeValue = localStorage.getItem("page4");
+let page4Text = document.getElementById('page4-texterea') as HTMLTextAreaElement;
+const page4NextButton = document.getElementById('page4-next') as HTMLButtonElement;
+const page4BeforeButton = document.getElementById('page4-before') as HTMLButtonElement;
 
-    page4BeforeButton.addEventListener('click', () => {
-        window.location.href = 'page4.html';
-    });
+document.addEventListener('DOMContentLoaded', () => {
+    if (LodeValue !== null) {
+        page4Text.value = LodeValue;
+    }
     
     page4Text.addEventListener('input', () => {
         if (page4Text.value.trim().length > 0) {
@@ -14,13 +15,19 @@ document.addEventListener('DOMContentLoaded', () => {
             page4NextButton.classList.remove('btn--maincolor');
         }
     });
+});
 
-    page4NextButton.addEventListener('click', (event) => {
-        if (page4Text.value.trim().length > 0) {
-            window.location.href = 'page5.html';
-        } else {
-            event.preventDefault();
-            alert('テキストを入力してください');
-        }
-    });
+page4BeforeButton.addEventListener('click', () => {
+    localStorage.setItem("page4", page4Text.value);
+    window.location.href = 'page3.html';
+});
+
+page4NextButton.addEventListener('click', (event) => {
+    if (page4Text.value.trim().length > 0) {
+        localStorage.setItem("page4", page4Text.value);
+        window.location.href = 'page5.html';
+    } else {
+        event.preventDefault();
+        alert('テキストを入力してください');
+    }
 });

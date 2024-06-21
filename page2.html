@@ -20,9 +20,8 @@
         </div>
         <div class="input-container">
             <h2>どんな感情がこみあがりましたか？（5個まで）</h2>
-            <p>感情を選択し、感情の激しさを数値で表してください。（0：弱い感情 100：激しい感情）</p>
-
-            <div class="emotion-container">
+            <p>感情を選択し、感情の激しさを数値で表してください。（0：弱い感情　100：激しい感情）</p>
+            <div id="emotion-container-1">
                 <select id="emotion-select-1">
                     <option value="">感情を選んでください</option>
                     <option value="1">喜び</option>
@@ -38,7 +37,7 @@
                     <input id="emotion-text-1" type="text">
                 </div>
             </div>
-            <div id="emotion-container-2" class="emotion-container emotion-hidden">
+            <div id="emotion-container-2" class="emotion-hidden">
                 <select id="emotion-select-2">
                     <option value="">感情を選んでください</option>
                     <option value="1">喜び</option>
@@ -54,7 +53,7 @@
                     <input id="emotion-text-2" type="text">
                 </div>
             </div>
-            <div id="emotion-container-3" class="emotion-container emotion-hidden">
+            <div id="emotion-container-3" class="emotion-hidden">
                 <select id="emotion-select-3">
                     <option value="">感情を選んでください</option>
                     <option value="1">喜び</option>
@@ -70,7 +69,7 @@
                     <input id="emotion-text-3" type="text">
                 </div>
             </div>
-            <div id="emotion-container-4" class="emotion-container emotion-hidden">
+            <div id="emotion-container-4" class="emotion-hidden">
                 <select id="emotion-select-4">
                     <option value="">感情を選んでください</option>
                     <option value="1">喜び</option>
@@ -79,14 +78,14 @@
                     <option value="4">焦り</option>
                     <option value="5">悲しみ</option>
                     <option value="6">不安</option>
-                    <option value="7">嫌悪</option>
+                    <option value="7">嫌悪</option>>
                 </select>
                 <div class="flex emotion-margin">
                     <input id="emotion-bar-4" type="range" min="0" max="100" step="5">
                     <input id="emotion-text-4" type="text">
                 </div>
             </div>
-            <div id="emotion-container-5" class="emotion-container emotion-hidden">
+            <div id="emotion-container-5" class="emotion-hidden">
                 <select id="emotion-select-5">
                     <option value="">感情を選んでください</option>
                     <option value="1">喜び</option>
@@ -106,62 +105,13 @@
                 <button id="emotion-delete" class="btn feel-btn emotion-btn-margin">感情欄を削除</button>
                 <button id="emotion-add" class="btn feel-btn btn--right__child">感情欄を追加</button>
             </div>
-            <div class="emotion-container3 emotion-hidden">
-                <select id="emotion-select3">
-                    <option value="">感情を選んでください</option>
-                    <option value="1">喜び</option>
-                    <option value="2">期待</option>
-                    <option value="3">穏やか</option>
-                    <option value="4">焦り</option>
-                    <option value="5">悲しみ</option>
-                    <option value="6">不安</option>
-                    <option value="7">嫌悪</option>
-                </select>
-                <div class="flex emotion-margin">
-                    <input id="emotion-bar-3" type="range" min="0" max="100" step="5">
-                    <input id="emotion-text-3" type="text">
-                </div>
-            </div>
-            <div class="emotion-container4 emotion-hidden">
-                <select id="emotion-select4">
-                    <option value="">感情を選んでください</option>
-                    <option value="1">喜び</option>
-                    <option value="2">期待</option>
-                    <option value="3">穏やか</option>
-                    <option value="4">焦り</option>
-                    <option value="5">悲しみ</option>
-                    <option value="6">不安</option>
-                    <option value="7">嫌悪</option>
-                </select>
-                <div class="flex emotion-margin">
-                    <input id="emotion-bar-4" type="range" min="0" max="100" step="5">
-                    <input id="emotion-text-4" type="text">
-                </div>
-            </div>
-            <div class="emotion-container5 emotion-hidden">
-                <select id="emotion-select5">
-                    <option value="">感情を選んでください</option>
-                    <option value="1">喜び</option>
-                    <option value="2">期待</option>
-                    <option value="3">穏やか</option>
-                    <option value="4">焦り</option>
-                    <option value="5">悲しみ</option>
-                    <option value="6">不安</option>
-                    <option value="7">嫌悪</option>
-                </select>
-                <div class="flex emotion-margin">
-                    <input id="emotion-bar-5" type="range" min="0" max="100" step="5">
-                    <input id="emotion-text-5" type="text">
-                </div>
-            </div>
         </div>
     </div>
     <div class="btn--flex">
         <button id="page2-before" class="btn btn--maincolor">1つ前に戻る</button>
-        <button id="page2-next" class="btn next--btn">次へ</button>
+        <button id="page2-next" class="btn">次へ</button>
     </div>
 </body>
-
 <script src="asset/page2.js"></script>
 
 </html>
